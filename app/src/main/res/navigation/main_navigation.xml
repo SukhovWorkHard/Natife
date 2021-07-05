@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/gifListFragment">
+
+    <fragment
+        android:id="@+id/gifListFragment"
+        android:name="test.sukhov.natife.ui.giflist.GifListFragment"
+        android:label="Gifs"
+        tools:layout="@layout/gif_list_fragment" >
+        <action
+            android:id="@+id/action_gifListFragment_to_gifDetailFragment"
+            app:destination="@id/gifDetailFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/gifDetailFragment"
+        android:name="test.sukhov.natife.ui.gifdetail.GifDetailFragment"
+        android:label="Gif detail"
+        tools:layout="@layout/gif_detail_fragment" >
+
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

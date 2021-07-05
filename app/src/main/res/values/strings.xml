@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Natife</string>
+
+    <string name="fab_list_up_content_desc">Up</string>
+    <string name="no_results">No Results</string>
+    <string name="retry">retry</string>
+
+    <!--region GifListMenu-->
+    <string name="gif_list_menu_search_title">Search</string>
+    <string name="gif_list_menu_search_desc">Search</string>
+    <!--endregion-->
+</resources>
